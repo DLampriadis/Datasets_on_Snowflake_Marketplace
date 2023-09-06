@@ -1,0 +1,209 @@
+ID,Position,ParentID,Type,Key,Title,Description,ReleasePolicy,Datatype,Unit,Decimals,Default
+0,0,,Dimension,Airports,Airports,,,,,,
+1,1,,TimeDimension,Periods,Periods,,TRUE,,,,
+2,,,TopicGroup,,Aircraft movements,"Take-offs and landings:
+Information concerning take-offs and landings is based on the so-called
+'airport records' dispatched monthly to Statistics Netherlands by civil
+airport authorities.
+The number of aircraft movements is the sum of all take-offs and
+landings together.",,,,,
+3,2,2,Topic,CrossCountryFlights_1,Cross-country flights,"The number of take-offs and landings in the category 'cross-country
+flights'; a cross-country flight takes off at one airport and lands at
+another.",,Double,number,0,Zero
+4,3,2,Topic,LocalFlights_2,Local flights,"The number of take-offs and landings in the category 'local flights';
+a local flight takes off and lands at the same airport.",,Double,number,0,Zero
+5,,,TopicGroup,,Commercial air traffic,"Commercial air traffic:
+All commercial air traffic by airlines transporting passengers, cargo and
+mail for remuneration and for hire. Such flights can be classified as
+follows:
+ - Scheduled flights:
+Commercial cross-country flights along fixed routes and according to fixed
+timetables.
+ - Non-scheduled flights:
+Basically irregular commercial cross-country flights, e.g. charter
+flights; taxi flights however are excluded.",,,,,
+6,,5,TopicGroup,,Flights,"The total of all arrivals and departures in commercial air traffic.
+Flights can be classified as follows:
+ - Scheduled flights:
+Commercial cross-country flights along fixed routes and according to fixed
+timetables.
+ - Non-scheduled flights:
+Basically irregular commercial cross-country flights, e.g. charter
+flights; taxi flights however are excluded.",,,,,
+7,,6,TopicGroup,,All flights,All arrivals and departures of airlines in commercial air traffic.,,,,,
+8,4,7,Topic,TotalFlights_3,Total flights,,,Double,number,0,Zero
+9,5,7,Topic,Scheduled_4,Scheduled,,,Double,number,0,Zero
+10,6,7,Topic,NonScheduled_5,Non-scheduled,,,Double,number,0,Zero
+11,,6,TopicGroup,,Arrivals,All arrivals of airlines in commercial air traffic.,,,,,
+12,7,11,Topic,TotalArrivalsFlights_6,Total arrivals flights,,,Double,number,0,Zero
+13,8,11,Topic,Scheduled_7,Scheduled,,,Double,number,0,Zero
+14,9,11,Topic,NonScheduled_8,Non-scheduled,,,Double,number,0,Zero
+15,,6,TopicGroup,,Departures,All departures of airlines in commercial air traffic.,,,,,
+16,10,15,Topic,TotalDeparturesFlights_9,Total departures flights,,,Double,number,0,Zero
+17,11,15,Topic,Scheduled_10,Scheduled,,,Double,number,0,Zero
+18,12,15,Topic,NonScheduled_11,Non-scheduled,,,Double,number,0,Zero
+19,,5,TopicGroup,,Passengers,"Transport of passengers in commercial air traffic. Also included are
+persons employed by airlines and passengers travelling on free tickets.
+Transit passengers (arriving and departing on the same aircraft) and
+passengers on taxi flights are not included.",,,,,
+20,,19,TopicGroup,,Total passengers,"The total number of passengers arriving and departing in commercial
+air traffic.",,,,,
+21,13,20,Topic,TotalPassengers_12,Total passengers,,,Double,number,0,Zero
+22,14,20,Topic,Scheduled_13,Scheduled,,,Double,number,0,Zero
+23,15,20,Topic,NonScheduled_14,Non-scheduled,,,Double,number,0,Zero
+24,,19,TopicGroup,,Passenger arrivals,The total number of passengers arriving in commercial air traffic.,,,,,
+25,16,24,Topic,TotalArrivalsPassengers_15,Total arrivals passengers,,,Double,number,0,Zero
+26,17,24,Topic,Scheduled_16,Scheduled,,,Double,number,0,Zero
+27,18,24,Topic,NonScheduled_17,Non-scheduled,,,Double,number,0,Zero
+28,,19,TopicGroup,,Passenger departures,The total number of passengers departing in commercial air traffic.,,,,,
+29,19,28,Topic,TotalDeparturesPassengers_18,Total departures passengers,,,Double,number,0,Zero
+30,20,28,Topic,Scheduled_19,Scheduled,,,Double,number,0,Zero
+31,21,28,Topic,NonScheduled_20,Non-scheduled,,,Double,number,0,Zero
+32,,19,TopicGroup,,Country of origin/destination,"Origin/destination of the passengers is based on 'flight coupons',
+which state the airport (country) of origin and destination of the
+aircraft.",,,,,
+33,22,32,Topic,TotalCountryOfOriginDestination_21,Total country of origin/destination,,,Double,number,0,Zero
+34,,32,TopicGroup,,Europe,Passengers to and from European airports.,,,,,
+35,23,34,Topic,EuropeTotal_22,Europe total,,,Double,number,0,Zero
+36,24,34,Topic,EUCountries_23,EU countries,"Passengers to and from airports in the European Union (EU),  
+
+As of Februari 2020 the European Union consits of the following countries:
+Austria, Belgium, Bulgaria, Croatia, Cyprus, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Ireland, Italy, Latvia, Lithuania, Luxembourg, Malta, the Netherlands, Poland, Portugal, Romania, Slovakia, Slovenia, Spain amd Sweden.
+
+The figures of the United Kingdom are added to the figures of /""/Other Europe/""/,",,Double,number,0,Zero
+37,25,34,Topic,OtherEurope_24,Other Europe,,,Double,number,0,Zero
+38,,32,TopicGroup,,Intercontinental,"Passengers to and from airports outside Europe, i.e. airports in
+Africa, America, Asia and Oceania.
+No detailed information by (sub)continent is available for
+Rotterdam Airport, Eindhoven Airport and Maastricht Aachen Airport for
+the period 1997-1999. Hence, the total exceeds the sum of the continents.",,,,,
+39,26,38,Topic,TotalIntercontinentalPassengers_25,Total intercontinental passengers,,,Double,number,0,Zero
+40,,38,TopicGroup,,Africa,The number of air passengers to and from Africa.,,,,,
+41,27,40,Topic,Africa_26,Africa,,,Double,number,0,Zero
+42,28,40,Topic,NorthAfrica_27,North Africa,,,Double,number,0,Zero
+43,29,40,Topic,WestAfrica_28,West Africa,,,Double,number,0,Zero
+44,30,40,Topic,CentralAfrica_29,Central Africa,,,Double,number,0,Zero
+45,31,40,Topic,EastAfrica_30,East Africa,,,Double,number,0,Zero
+46,32,40,Topic,SouthAfrica_31,South Africa,,,Double,number,0,Zero
+47,,38,TopicGroup,,America,The number of air passengers to and from America.,,,,,
+48,33,47,Topic,America_32,America,,,Double,number,0,Zero
+49,34,47,Topic,NorthAmerica_33,North America,,,Double,number,0,Zero
+50,35,47,Topic,CentralAmerica_34,Central America,,,Double,number,0,Zero
+51,36,47,Topic,SouthAmerica_35,South America,,,Double,number,0,Zero
+52,,38,TopicGroup,,Asia,The number of air passengers to and from Asia.,,,,,
+53,37,52,Topic,Asia_36,Asia,,,Double,number,0,Zero
+54,38,52,Topic,WestAsia_37,West Asia,,,Double,number,0,Zero
+55,39,52,Topic,SouthEastAsia_38,South-East Asia,,,Double,number,0,Zero
+56,40,52,Topic,NorthEastAsia_39,North-East Asia,,,Double,number,0,Zero
+57,41,38,Topic,Oceania_40,Oceania,,,Double,number,0,Zero
+58,42,38,Topic,OtherUnknown_41,Other/unknown,,,Double,number,0,Zero
+59,43,32,Topic,Unknown_42,Unknown,,,Double,number,0,Zero
+60,,5,TopicGroup,,Cargo,"Transport of cargo in commercial air traffic, excluding mail and luggage.",,,,,
+61,,60,TopicGroup,,Total cargo,"The total weight of cargo in commercial air traffic, loaded and unloaded
+at Dutch airports.",,,,,
+62,44,61,Topic,TotalCargo_43,Total cargo,,,Double,ton,0,Zero
+63,45,61,Topic,ScheduledCargo_44,Scheduled cargo,,,Double,ton,0,Zero
+64,46,61,Topic,NonScheduledCargo_45,Non-scheduled cargo,,,Double,ton,0,Zero
+65,,60,TopicGroup,,Unloaded cargo,"The total weight of cargo in commercial air traffic, unloaded at Dutch
+airports.",,,,,
+66,47,65,Topic,TotalUnloadedCargo_46,Total unloaded cargo,,,Double,ton,0,Zero
+67,48,65,Topic,ScheduledCargo_47,Scheduled cargo,,,Double,ton,0,Zero
+68,49,65,Topic,NonScheduledCargo_48,Non-scheduled cargo,,,Double,ton,0,Zero
+69,,60,TopicGroup,,Loaded cargo,"The total weight of cargo in commercial air traffic, loaded at Dutch
+airports.",,,,,
+70,50,69,Topic,TotalLoadedCargo_49,Total loaded cargo,,,Double,ton,0,Zero
+71,51,69,Topic,ScheduledCargo_50,Scheduled cargo,,,Double,ton,0,Zero
+72,52,69,Topic,NonScheduledCargo_51,Non-scheduled cargo,,,Double,ton,0,Zero
+73,,60,TopicGroup,,Country of origin/destination,"The weight of airlifted cargo by country of origin and destination.
+'Load sheets' provide information on the airports where cargo is
+loaded or unloaded.",,,,,
+74,53,73,Topic,TotalCountryOfOriginDestination_52,Total country of origin/destination,,,Double,ton,0,Zero
+75,,73,TopicGroup,,Europe cargo,"Cargo transport to and from European airports. No detailed
+information on Eindhoven Airport and Maastricht Aachen Airport is
+available for the period 1997-1999. Hence, the total exceeds the sum of
+the subgroups.",,,,,
+76,54,75,Topic,EuropeTotalCargo_53,Europe total cargo,,,Double,ton,0,Zero
+77,55,75,Topic,EUCountries_54,EU countries,"Cargo to and from airports in the European Union (EU),
+
+As of Februari 2020 the European Union consits of the following countries:
+Austria, Belgium, Bulgaria, Croatia, Cyprus, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Ireland, Italy, Latvia, Lithuania, Luxembourg, Malta, the Netherlands, Poland, Portugal, Romania, Slovakia, Slovenia, Spain amd Sweden.
+
+The figures of the United Kingdom are added to the figures of /""/Other Europe/""/,",,Double,ton,0,Zero
+78,56,75,Topic,OtherEurope_55,Other Europe,,,Double,ton,0,Zero
+79,,73,TopicGroup,,Intercontinental cargo,"Cargo transport to and from airports outside Europe, i.e. Africa,
+America, Asia and Oceania. No detailed
+information on Rotterdam Airport, Eindhoven Airport and Maastricht Aachen
+Airport is available for the period 1997-1999. Hence, the total exceeds
+the sum of the continents.",,,,,
+80,57,79,Topic,TotalIntercontinentalCargo_56,Total intercontinental cargo,,,Double,ton,0,Zero
+81,,79,TopicGroup,,Africa,The total weight of cargo transports by air to and from Africa.,,,,,
+82,58,81,Topic,Africa_57,Africa,,,Double,ton,0,Zero
+83,59,81,Topic,NorthAfrica_58,North Africa,,,Double,ton,0,Zero
+84,60,81,Topic,WestAfrica_59,West Africa,,,Double,ton,0,Zero
+85,61,81,Topic,CentralAfrica_60,Central Africa,,,Double,ton,0,Zero
+86,62,81,Topic,EastAfrica_61,East Africa,,,Double,ton,0,Zero
+87,63,81,Topic,SouthAfrica_62,South Africa,,,Double,ton,0,Zero
+88,,79,TopicGroup,,America,The total weight of cargo transports by air to and from America.,,,,,
+89,64,88,Topic,America_63,America,,,Double,ton,0,Zero
+90,65,88,Topic,NorthAmerica_64,North America,,,Double,ton,0,Zero
+91,66,88,Topic,CentralAmerica_65,Central America,,,Double,ton,0,Zero
+92,67,88,Topic,SouthAmerica_66,South America,,,Double,ton,0,Zero
+93,,79,TopicGroup,,Asia,The total weight of cargo transports by air to and from Asia.,,,,,
+94,68,93,Topic,Asia_67,Asia,,,Double,ton,0,Zero
+95,69,93,Topic,WestAsia_68,West Asia,,,Double,ton,0,Zero
+96,70,93,Topic,SouthEastAsia_69,South-East Asia,,,Double,ton,0,Zero
+97,71,93,Topic,NorthEastAsia_70,North-East Asia,,,Double,ton,0,Zero
+98,72,79,Topic,Oceania_71,Oceania,,,Double,ton,0,Zero
+99,73,79,Topic,OtherUnknown_72,Other/unknown,,,Double,ton,0,Zero
+100,74,73,Topic,Unknown_73,Unknown,,,Double,ton,0,Zero
+101,,5,TopicGroup,,Mail,"The total weight of mail in commercial air traffic, loaded and unloaded
+at Dutch airports.",,,,,
+102,,101,TopicGroup,,Total mail,"The total weight of mail in commercial air traffic, loaded and unloaded
+at Dutch airports.",,,,,
+103,75,102,Topic,TotalMail_74,Total mail,,,Double,ton,0,Zero
+104,76,102,Topic,ScheduledMail_75,Scheduled mail,,,Double,ton,0,Zero
+105,77,102,Topic,NonScheduledCargoMail_76,Non-scheduled cargo mail,,,Double,ton,0,Zero
+106,,101,TopicGroup,,Unloaded mail,"The total weight of mail in commercial air traffic, unloaded at Dutch
+airports.",,,,,
+107,78,106,Topic,TotalUnloadedMail_77,Total unloaded mail,,,Double,ton,0,Zero
+108,79,106,Topic,ScheduledMail_78,Scheduled mail,,,Double,ton,0,Zero
+109,80,106,Topic,NonScheduledMail_79,Non-scheduled mail,,,Double,ton,0,Zero
+110,,101,TopicGroup,,Loaded mail,"The total weight of mail in commercial air traffic, loaded at Dutch
+airports.",,,,,
+111,81,110,Topic,TotalLoadedMail_80,Total loaded mail,,,Double,ton,0,Zero
+112,82,110,Topic,ScheduledMail_81,Scheduled mail,,,Double,ton,0,Zero
+113,83,110,Topic,NonScheduledMail_82,Non-scheduled mail,,,Double,ton,0,Zero
+114,,101,TopicGroup,,Country of origin/destination mail,"The weight of airlifted mail by country of origin and destination.
+'Load sheets' provide information on the airports where mail is
+loaded or unloaded.",,,,,
+115,84,114,Topic,TotalCountryOfOriginDestination_83,Total country of origin/destination,,,Double,ton,0,Zero
+116,,114,TopicGroup,,Europe mail,Mail transport to and from European airports.,,,,,
+117,85,116,Topic,EuropeTotalMail_84,Europe total mail,,,Double,ton,0,Zero
+118,86,116,Topic,EUCountries_85,EU countries,"Mail to and from airports in the European Union (EU),
+
+As of Februari 2020 the European Union consits of the following countries:
+Austria, Belgium, Bulgaria, Croatia, Cyprus, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Ireland, Italy, Latvia, Lithuania, Luxembourg, Malta, the Netherlands, Poland, Portugal, Romania, Slovakia, Slovenia, Spain amd Sweden.
+
+The figures of the United Kingdom are added to the figures of /""/Other Europe/""/,",,Double,ton,0,Zero
+119,87,116,Topic,OtherEurope_86,Other Europe,,,Double,ton,0,Zero
+120,,114,TopicGroup,,Intercontinental mail,"Mail transport to and from airports outside Europe, i.e. Africa,
+America, Asia and Oceania.",,,,,
+121,88,120,Topic,TotalIntercontinentalMail_87,Total intercontinental mail,,,Double,ton,0,Zero
+122,,120,TopicGroup,,Africa,The total weight of mail transports by air to and from Africa.,,,,,
+123,89,122,Topic,Africa_88,Africa,,,Double,ton,0,Zero
+124,90,122,Topic,NorthAfrica_89,North Africa,,,Double,ton,0,Zero
+125,91,122,Topic,WestAfrica_90,West Africa,,,Double,ton,0,Zero
+126,92,122,Topic,CentralAfrica_91,Central Africa,,,Double,ton,0,Zero
+127,93,122,Topic,EastAfrica_92,East Africa,,,Double,ton,0,Zero
+128,94,122,Topic,SouthAfrica_93,South Africa,,,Double,ton,0,Zero
+129,,120,TopicGroup,,America,The total weight of mail transports by air to and from America.,,,,,
+130,95,129,Topic,America_94,America,,,Double,ton,0,Zero
+131,96,129,Topic,NorthAmerica_95,North America,,,Double,ton,0,Zero
+132,97,129,Topic,CentralAmerica_96,Central America,,,Double,ton,0,Zero
+133,98,129,Topic,SouthAmerica_97,South America,,,Double,ton,0,Zero
+134,,120,TopicGroup,,Asia,The total weight of mail transports by air to and from Asia.,,,,,
+135,99,134,Topic,Asia_98,Asia,,,Double,ton,0,Zero
+136,100,134,Topic,WestAsia_99,West Asia,,,Double,ton,0,Zero
+137,101,134,Topic,SouthEastAsia_100,South-East Asia,,,Double,ton,0,Zero
+138,102,134,Topic,NorthEastAsia_101,North-East Asia,,,Double,ton,0,Zero
+139,103,120,Topic,Oceania_102,Oceania,,,Double,ton,0,Zero
