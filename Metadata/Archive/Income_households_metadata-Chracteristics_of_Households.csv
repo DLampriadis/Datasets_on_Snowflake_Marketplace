@@ -1,0 +1,10 @@
+Key,Title,Description
+1014800,Home ownership: Owner-occupied home,A household lives in its own home or lives in a rented house. In addition households living in a rented house have been subdivided into households receiving rent subsidy or not.
+1014900,Home ownership: Rent with rent subsidy,A household lives in its own home or lives in a rented house. In addition households living in a rented house have been subdivided into households receiving rent subsidy or not.
+1014950,Home ownership: Rent: no rent subsidy,A household lives in its own home or lives in a rented house. In addition households living in a rented house have been subdivided into households receiving rent subsidy or not.
+1016090,"Type: Couple, with child(ren)","Private household consisting of two persons, both younger than 65 years, who are married, in a registered partnership or cohabiting, with or without resident children."
+1017780,"Type: Couple, no children","Private household consisting of a couple, without children living at home."
+1030009,Other types of households,Private household consisting of other persons than the main earner or reference person and his/her possible partner and/or children living at home. For instance a household consisting of relatives.
+1050020,Type: Single man,Private household consisting of one male person.
+1050035,Type: Single woman,Private household consisting of one female person.
+1050190,Type: One-parent family,Private household consisting of one parent and one or more children living at home.
